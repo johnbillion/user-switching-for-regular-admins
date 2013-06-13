@@ -25,12 +25,10 @@ add_action( 'plugins_loaded', 'usfra_load' );
 
 function usfra_filter( $user_caps, $required_caps, $args ) {
 
-	global $user_switching;
-
 	if ( 'switch_to_user' == $args[0] )
 		$user_caps['switch_to_user'] = ( user_can( $args[1], 'administrator' ) and !is_super_admin( $args[2] ) );
 	else if ( 'switch_off' == $args[0] )
-		$user_caps['switch_off'] = ( user_can( $args[1], 'administrator' ) and !$user_switching->get_old_user() );
+		$user_caps['switch_off'] = ( user_can( $args[1], 'administrator' ) and user_switching::get_old_user() );
 
 	return $user_caps;
 
@@ -41,7 +39,7 @@ function usfra_load() {
 	global $user_switching;
 
 	if ( is_object( $user_switching ) ) {
-		remove_filter( 'user_has_cap', array( $user_switching, 'user_cap_filter' ), 10 );
+		remove_filter( 'user_has_cap', array( $user_switching, 'filter_user_has_cap' ), 10 );
 		add_filter( 'user_has_cap', 'usfra_filter', 10, 3 );
 	}
 
