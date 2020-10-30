@@ -1,0 +1,21 @@
+{
+	"name"       : "johnbillion/user-switching-for-regular-admins",
+	"description": "On WordPress multisite, instant switching between user accounts for local admins.",
+	"homepage"   : "https://github.com/johnbillion/user-switching-for-regular-admins",
+	"type"       : "wordpress-plugin",
+	"license"    : "GPL-2.0-or-later",
+	"authors"    : [
+		{
+			"name"    : "John Blackbourn",
+			"homepage": "https://johnblackbourn.com/"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/johnbillion/user-switching-for-regular-admins/issues",
+		"source": "https://github.com/johnbillion/user-switching-for-regular-admins"
+	},
+	"require": {
+		"composer/installers": "^1",
+    "johnbillion/user-switching": "^1.5.6"
+	}
+}
