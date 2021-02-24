@@ -16,6 +16,6 @@
 	},
 	"require": {
 		"composer/installers": "^1",
-		"johnbillion/user-switching": "^1"
+		"wpackagist-plugin/user-switching": "^1"
 	}
 }
