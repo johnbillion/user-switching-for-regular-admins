@@ -15,7 +15,7 @@
 		"source": "https://github.com/johnbillion/user-switching-for-regular-admins"
 	},
 	"require": {
-		"composer/installers": "^1",
+		"composer/installers": "^1|^2",
 		"johnbillion/user-switching": "^1"
 	}
 }
