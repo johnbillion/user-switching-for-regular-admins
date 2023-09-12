@@ -2,12 +2,12 @@
 /*
 Plugin Name:  User Switching for Regular Admins
 Description:  Adds support for the User Switching plugin to regular admins on multisite.
-Version:      1.1
+Version:      1.2
 Plugin URI:   https://github.com/johnbillion/user-switching-for-regular-admins
 Author:       <a href="http://ryanhellyer.net/">Ryan Hellyer</a> & <a href="http://johnblackbourn.com/">John Blackbourn</a>
 License:      GPL v2 or later
 
-Copyright © 2013 John Blackbourn
+Copyright © 2013-2023 John Blackbourn
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
